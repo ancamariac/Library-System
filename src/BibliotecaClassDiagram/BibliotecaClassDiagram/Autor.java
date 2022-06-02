@@ -9,37 +9,19 @@ package BibliotecaClassDiagram.BibliotecaClassDiagram;
  * 
  */
 public class Autor {
-	/**
-	 * Atributele clasei Autor
-	 */
-	
-	/**
-	 * Numele autorului
-	 */
-	private String nume;
 
-	/**
-	 * Prenumele autorului
-	 */
-	private String prenume;
+	private String nume; //Numele autorului
+	private String prenume; //Prenumele autorului
+	private String telefon; //Telefonul autorului
+	private String email; //Email-ul autorului
+	private String dataNastere; //Data de nastere a autorului
 
-	/**
-	 * Telefonul autorului
-	 */
-	private String telefon;
-
-	/**
-	 * Email-ul autorului
-	 */
-	private String email;
-
-	/**
-	 * Data de nastere a autorului
-	 */
-	private String dataNastere;
-
-	Autor(String nume, String prenume, String telefon, String email, String dataNastere) {
+	public Autor(String nume, String prenume, String telefon, String email, String dataNastere) {
 		this.nume = nume;
+		this.prenume = prenume;
+		this.telefon = telefon;
+		this.email = email;
+		this.dataNastere = dataNastere;
 	}
 	
 	String getNume() {
@@ -61,7 +43,27 @@ public class Autor {
 	String getDataNastere() {
 		return this.dataNastere;
 	}
-	
+
+	public void setNume(String nume) {
+		this.nume = nume;
+	}
+
+	public void setPrenume(String prenume) {
+		this.prenume = prenume;
+	}
+
+	public void setTelefon(String telefon) {
+		this.telefon = telefon;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setDataNastere(String dataNastere) {
+		this.dataNastere = dataNastere;
+	}
+
 	public void afisare() {
 		System.out.println("=====  Informatii despre autor =====");
 		System.out.println("Nume si prenume: " + this.nume + " " + this.prenume);
